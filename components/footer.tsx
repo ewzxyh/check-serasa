@@ -41,7 +41,7 @@ export function Footer() {
                                     className="text-[#0066FF] hover:underline"
                                     aria-label="Visitar Ewzxyh Studios"
                                 >
-                                    Ewzxyh Studios
+                                    Ewzxyh Studios e Case Agência
                                 </a>
                             </p>
                         </div>
