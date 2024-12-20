@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button"
 import { BarChart2 } from "lucide-react"
-import { SiWhatsapp } from "react-icons/si"
+import { PulsatingButtonDemo } from "./button-whatsapp"
 
 export function Footer() {
     return (
@@ -58,13 +57,7 @@ export function Footer() {
                             Tome decisões financeiras mais inteligentes com informações
                             precisas e atualizadas.
                         </p>
-                        <Button
-                            className="bg-[#0066FF] hover:bg-[#0066FF]/90 w-fit"
-                            aria-label="Verificar seu score"
-                        >
-                            <SiWhatsapp className="w-4 h-4" />
-                            Verificar score
-                        </Button>
+                        <PulsatingButtonDemo />
                     </div>
                 </div>
             </div>

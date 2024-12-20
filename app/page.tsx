@@ -8,7 +8,7 @@ import Image from "next/image";
 import NumberTicker from "@/components/magicui/number-ticker";
 import ServicesSection from "@/components/services";
 import { FAQ } from "@/components/faq"
-
+import { PulsatingButtonDemo } from "@/components/button-whatsapp";
 const CreditScorePage = () => {
   return (
     <main className="min-h-screen mx-auto px-8 md:px-32">
@@ -48,13 +48,7 @@ const CreditScorePage = () => {
               Ao consultar seu CPF, você descobre se há restrições em seu nome, protestos em cartório e outras informações.
             </p>
             <div className="flex gap-4">
-              <Button
-                className="bg-[#0066FF] hover:bg-[#0066FF]/90 w-fit"
-                aria-label="Verificar seu score"
-              >
-                <SiWhatsapp className="w-4 h-4 mr-2" />
-                Verificar score
-              </Button>
+              <PulsatingButtonDemo />
             </div>
           </div>
           <div className="relative w-full md:w-1/2 min-h-[400px]">

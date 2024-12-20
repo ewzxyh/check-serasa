@@ -1,5 +1,6 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card"
 import { Scan, Briefcase, Shield, CreditCard, Award, WandSparkles } from 'lucide-react'
+import { PulsatingButtonDemo } from "./button-whatsapp"
 
 export default function ServicesSection() {
     return (
@@ -63,6 +64,9 @@ export default function ServicesSection() {
                     ))}
                 </div>
             </div>
+            <div className="flex justify-center pt-11">
+                    <PulsatingButtonDemo />
+                </div>
         </div>
     )
 }

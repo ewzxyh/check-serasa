@@ -1,8 +1,7 @@
-import { ArrowRight, BarChart2, PieChart, Users, Target, UserCircle, Building2 } from 'lucide-react'
+import { BarChart2, PieChart, Users, Target, UserCircle, Building2 } from 'lucide-react'
 import CreditScoreLanding from './score'
-import { SiWhatsapp } from 'react-icons/si'
-import { Button } from './ui/button'
 import Image from 'next/image'
+import { PulsatingButtonDemo } from './button-whatsapp'
 
 export function FeaturesGrid() {
   const features = [
@@ -50,13 +49,6 @@ export function FeaturesGrid() {
                 <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                 <p className="text-gray-600 mb-4">{feature.description}</p>
               </div>
-              <a 
-                href="#" 
-                className="inline-flex items-center text-[#0066FF] group-hover:underline mt-auto"
-                aria-label={`Saiba mais sobre ${feature.title}`}
-              >
-                Saiba mais <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
             </div>
           ))}
         </div>
@@ -82,10 +74,7 @@ export function FeaturesGrid() {
               a informação é o seu maior e mais valioso ativo.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-[#1D6AFF] hover:bg-blue-600">
-                <SiWhatsapp className="w-4 h-4" />
-                Verificar score
-              </Button>
+              <PulsatingButtonDemo />
             </div>
           </div>
         </div>
