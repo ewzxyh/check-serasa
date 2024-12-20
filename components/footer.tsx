@@ -17,11 +17,9 @@ export function Footer() {
                         </div>
                         <p className="text-sm text-gray-600 mb-6">
                             Copyright 2024 Check Serasa. Todos os direitos reservados.
-                            Check Serasa e os marcas Check Serasa usadas aqui são marcas
-                            registradas da Check Serasa.
                         </p>
                         <div className="flex items-center gap-8">
-                            <a
+                            {/* <a
                                 href="#"
                                 className="text-sm text-gray-600 hover:text-[#0066FF] transition-colors"
                                 aria-label="Política de Privacidade"
@@ -34,7 +32,7 @@ export function Footer() {
                                 aria-label="Termos e Condições"
                             >
                                 Termos e Condições
-                            </a>
+                            </a> */}
                             <p className="text-sm text-gray-500">
                                 Desenvolvido por{" "}
                                 <a

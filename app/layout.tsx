@@ -5,15 +5,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Check Serasa - Verifique seu score",
-  description: "Verifique seu score e saiba como melhorar",
+  title: "Check Serasa - Sua vida financeira em dia",
+  description: "Verifique seu score e melhore",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Check Serasa - Verifique seu score",
-    description: "Verifique seu score e saiba como melhorar",
-    url: "https://Check Serasa.com",
+    title: "Check Serasa - Sua vida financeira em dia",
+    description: "Verifique seu score e melhore",
+    url: "https://checkserasa.online",
     siteName: "Check Serasa",
     images: [
       { url: "/favicon.ico" },
