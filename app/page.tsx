@@ -1,101 +1,145 @@
+import HeroBackground from "@/components/background";
+import { FeaturesGrid } from "@/components/features-grid";
+import { Footer } from "@/components/footer";
+import { Button } from "@/components/ui/button";
+import { SiWhatsapp } from "react-icons/si";
+import { BarChart2, Info } from "lucide-react";
 import Image from "next/image";
+import NumberTicker from "@/components/magicui/number-ticker";
+import ServicesSection from "@/components/services";
+import { FAQ } from "@/components/faq"
 
-export default function Home() {
+const CreditScorePage = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen mx-auto px-8 md:px-32">
+      {/* Header */}
+      <header className="container mx-auto pt-6 flex items-center justify-between bg-transparent ml-2 md:ml-0">
+        <div className="flex items-center gap-2">
+          <BarChart2 className="w-8 h-8 text-[#0066FF]" />
+          <span className="text-3xl font-black">Check Serasa</span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Button
+          className="bg-[#0066FF] hover:bg-[#0066FF]/90 w-fit hidden md:flex md:items-center"
+          aria-label="Verificar seu score"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <SiWhatsapp className="w-4 h-4 mr-2" />
+          Verificar score
+        </Button>
+      </header>
+
+      {/* Hero Section */}
+      <section className="container relative mx-auto px-4 py-8 md:pb-24">
+        <div className="absolute inset-0 -z-10">
+          <HeroBackground />
+        </div>
+
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="max-w-2xl">
+            <p className="text-xl text-neutral-700 mb-2">
+              Está negativado?
+            </p>
+            <h1 className="text-5xl md:text-7xl font-bold text-[#1D6AFF] mb-6">
+              <strong className="font-black">Nome limpo e blindado</strong> <strong className="font-bold text-blue-950">em poucos dias</strong>
+            </h1>
+            <p className="text-xl text-neutral-900 mb-8">
+              A Check Serasa é especializada em recuperação do direito ao crédito com clientes por todo país que estão retomando sua vida financeira.
+            </p>
+            <p className="text-xl text-neutral-900 mb-8">
+              Ao consultar seu CPF, você descobre se há restrições em seu nome, protestos em cartório e outras informações.
+            </p>
+            <div className="flex gap-4">
+              <Button
+                className="bg-[#0066FF] hover:bg-[#0066FF]/90 w-fit"
+                aria-label="Verificar seu score"
+              >
+                <SiWhatsapp className="w-4 h-4 mr-2" />
+                Verificar score
+              </Button>
+            </div>
+          </div>
+          <div className="relative w-full md:w-1/2 min-h-[400px]">
+            <div className="relative w-full aspect-square">
+              <Image
+                src="/hero.svg"
+                alt="Ilustração de pessoa analisando gráficos financeiros"
+                fill
+                className="object-contain"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div className="absolute bottom-11 md:bottom-4 right-4 bg-white rounded-lg shadow-lg p-4 flex items-center gap-4">
+              <div>
+                <p className="text-sm text-gray-600">Sua pontuação de crédito</p>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl font-extrabold">
+                    <NumberTicker value={740} className="text-[#00BA88]" />
+                  </span>
+                  <span className="text-gray-600 font-medium mt-1">Bom</span>
+                </div>
+                <p className="text-sm text-gray-600 underline flex items-center gap-2">
+                  <Info className="w-4 h-4" />
+                  <span className="font-bold">Melhorar score</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section className="bg-[#1D6AFF] py-4">
+        <div className="container mx-auto px-4 flex items-center justify-between">
+          <p className="text-white text-sm">
+            Seu score é calculado junto com nosso parceiro confiável: <span className="font-bold">Serasa Experian</span>
+          </p>
+          <div className="flex items-center gap-8">
+            {/* Add partner logos here */}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Grid */}
+      <section className="container mx-auto top-0 border p-4 md:p-10">
+        <FeaturesGrid />
+      </section>
+
+      {/* Statistics Section */}
+      <section className="bg-[#1D6AFF] text-white mt-0 md:-mt-10 py-16">
+        <div className="container mx-auto px-11">
+          <h2 className="text-3xl font-bold mb-8">
+            Total de clientes que usam nosso serviço
+          </h2>
+          <div className="flex gap-16">
+            <div>
+              <p className="text-4xl font-bold">5.468</p>
+              <p>Clientes pessoais</p>
+            </div>
+            <div>
+              <p className="text-4xl font-bold">1.678</p>
+              <p>Clientes empresas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="container mx-auto px-4 pt-8 border">
+        <ServicesSection />
+      </section>
+
+      {/* FAQ Section */}
+      <section className="container mx-auto px-4">
+        <FAQ />
+      </section>
+
+      {/* Footer CTA Section */}
+      <section className="container mx-auto px-4">
+        <Footer />
+      </section>
+
+    </main>
   );
-}
+};
+
+export default CreditScorePage;
