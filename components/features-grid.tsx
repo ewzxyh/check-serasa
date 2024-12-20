@@ -18,7 +18,7 @@ export function FeaturesGrid() {
     {
       title: "Entenda seu score",
       icon: Target,
-      description: "O score de crédito pode ser complicado. Mas não precisa ser. Aprender comportamentos responsáveis com o crédito pode te ajudar a alcançar seus objetivos. Descubra o que está no seu relatório de crédito da Equifax, como seus scores são calculados e como se manter no caminho certo em sua jornada de crédito."
+      description: "O score de crédito pode ser complicado. Mas não precisa ser. Aprender comportamentos responsáveis com o crédito pode te ajudar a alcançar seus objetivos. Descubra o que está no seu relatório de crédito da Serasa, como seus scores são calculados e como se manter no caminho certo em sua jornada de crédito."
     },
     {
       title: "Alcance seus objetivos financeiros",
