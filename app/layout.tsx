@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Check Serasa - Sua vida financeira em dia",
   description: "Verifique seu score e melhore",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.svg",
   },
   openGraph: {
     title: "Check Serasa - Sua vida financeira em dia",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://checkserasa.online",
     siteName: "Check Serasa",
     images: [
-      { url: "/favicon.ico" },
+      { url: "/icon.svg" },
     ],
   },
   twitter: {
